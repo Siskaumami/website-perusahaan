@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — BM Tech</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script defer src="assets/script.js"></script>
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">
+                <div class="logo-mark">
+                    <span>BM</span>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">BM Tech</span>
+                    <span class="brand-tagline">Brightmind Technology</span>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="product.html" class="nav-link">Product</a>
+                <a href="contact.html" class="nav-link nav-cta">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact</h1>
+                <p>
+                    Ceritakan website seperti apa yang ingin kamu buat. 
+                    Form di bawah ini akan langsung diarahkan ke WhatsApp BM Tech.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container contact-layout">
+                <form class="contact-form" onsubmit="sendWhatsApp(event)">
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" name="name" placeholder="Nama lengkap" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Alamat</label>
+                        <input type="text" id="address" name="address" placeholder="Kota / Domisili">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Nomor HP</label>
+                        <input type="tel" id="phone" name="phone" placeholder="08xxxx" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="websiteDesc">Deskripsi website yang akan dibuat</label>
+                        <textarea id="websiteDesc" name="websiteDesc" rows="4" placeholder="Contoh: Company profile untuk studio foto dengan halaman gallery dan kontak." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Catatan</label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="Tambahkan referensi atau kebutuhan khusus (opsional)."></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary">Kirim via WhatsApp</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="section section-map">
+            <div class="container">
+                <h2>Lokasi</h2>
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps?q=-7.774577,112.746460&hl=id&z=14&output=embed"
+                        width="100%"
+                        height="300"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="brand footer-brand">
+                    <div class="logo-mark">
+                        <span>BM</span>
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-name">BM Tech</span>
+                        <span class="brand-tagline">Brightmind Technology</span>
+                    </div>
+                </div>
+                <p class="footer-description">
+                    BM Tech adalah agency web yang berfokus pada pengalaman digital modern, cepat, dan mudah diakses. 
+                    Kami membantu bisnis tampil profesional dan relevan di dunia online.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-title">Contact Info</h3>
+                <ul class="footer-links">
+                    <li>
+                        <a href="https://www.google.com/maps?q=-7.774577,112.746460" target="_blank">
+                            Jl. Brightmind No. 10, Malang
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:brightmindtech.id@gmail.com">brightmindtech.id@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/6288211699073" target="_blank">+62 882-1169-9073</a>
+                    </li>
+                </ul>
+                <div class="footer-social">
+                    <h4 class="footer-subtitle">Follow Us</h4>
+                    <a class="social-item" href="https://www.instagram.com/bmtech.idn?igsh=b2dyMHViMXQwOXFl" target="_blank">
+                        <div class="social-icon">IG</div>
+                        <div>
+                            <div class="social-name">Instagram</div>
+                            <div class="social-handle">@bmtech.idn</div>
+                        </div>
+                    </a>
+                    <a class="social-item" href="https://www.tiktok.com/@bmtech.idn?_r=1&_t=ZS-91TTlUSwkzY" target="_blank">
+                        <div class="social-icon">TT</div>
+                        <div>
+                            <div class="social-name">TikTok</div>
+                            <div class="social-handle">@bmtech.idn</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 BM Tech · All rights reserved.</p>
+        </div>
+    </footer>
+    <a href="https://wa.me/6288211699073" target="_blank" class="floating-whatsapp" aria-label="Chat via WhatsApp">
+        <span>WA</span>
+    </a>
+
+    </main>
+</body>
+</html>
