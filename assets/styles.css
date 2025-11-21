@@ -63,6 +63,13 @@ img { max-width: 100%; display: block; }
     letter-spacing: 0.08em;
 }
 
+.logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
 .brand-text {
     display: flex;
     flex-direction: column;
@@ -472,6 +479,19 @@ textarea {
     display: grid;
     grid-template-columns: 2fr 1fr 1.2fr;
     gap: 2.5rem;
+}
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.follow-us {
+    flex: 1;
 }
 
 .footer-brand .brand-text .brand-name {
